@@ -1,0 +1,24 @@
+name: Feature request
+description: Propose a workflow improvement.
+title: "[Feature]: "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What workflow problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should the tool do?
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation idea
+      description: What synthetic test or example would prove it works?
