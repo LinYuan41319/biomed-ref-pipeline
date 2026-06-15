@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: Biomed Ref Pipeline
+message: If you use this software in research workflows, please cite the repository.
+type: software
+authors:
+  - family-names: Biomed Ref Pipeline Maintainers
+repository-code: https://github.com/LinYuan41319/biomed-ref-pipeline
+license: MIT
+version: 0.2.1
+date-released: 2026-06-15
+abstract: Local biomedical reference automation for PMID extraction, PubMed metadata verification, Zotero import preparation, Word citation field insertion, JCR screening, and manuscript QC.
