@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biomed-ref-pipeline"
+version = "0.2.1"
+description = "Local biomedical reference pipeline for PMID extraction, PubMed metadata, Zotero checks, JCR screening, and manuscript QC."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["pubmed", "pmid", "zotero", "docx", "biomedical-writing", "reference-management"]
+authors = [
+  { name = "Biomed Ref Pipeline Maintainers" }
+]
+dependencies = [
+  "python-docx>=1.1.0",
+  "openpyxl>=3.1.0",
+  "lxml>=5.0.0"
+]
+
+[project.scripts]
+biomed-ref = "biomed_ref_pipeline.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/LinYuan41319/biomed-ref-pipeline"
+Repository = "https://github.com/LinYuan41319/biomed-ref-pipeline"
+Issues = "https://github.com/LinYuan41319/biomed-ref-pipeline/issues"
+Documentation = "https://github.com/LinYuan41319/biomed-ref-pipeline/tree/main/docs"
+
+[tool.setuptools.packages.find]
+where = ["src"]
